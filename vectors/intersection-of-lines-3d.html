@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>8) Intersection of Lines in 3D — Intersection of Lines in 3D — Vectors for Tabular ML (Beginner)</title>
+<meta name="description" content="Learn 8) intersection of lines in 3d — intersection of lines in 3d with an online-store spreadsheet example, worked numbers, and NumPy." />
+<meta name="keywords" content="vectors, linear algebra, data science, spreadsheets, numpy" />
+<link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+<header>
+<p class="small">Home &gt; Vectors &gt; 8) Intersection of Lines in 3D — Intersection of Lines in 3D</p>
+<h1>8) Intersection of Lines in 3D — Intersection of Lines in 3D</h1>
+<nav><a href="../index.html">Landing</a></nav>
+</header>
+<section>
+<h2>Quick reminder: our dataset</h2>
+<p>Each customer is one row. Each column is a <strong>feature</strong> (a spreadsheet column). A <strong>model</strong> is a formula that uses features to make a guess.</p>
+<p><code>x = [age, income_k, website_visits_last_week, emails_opened_last_month, prior_purchases, satisfaction_score]</code></p>
+<h2>A) What it means</h2>
+<p>Lines intersect if one point lies on both for some t and s.</p>
+<h2>B) How to picture it</h2>
+<p>In 3D, lines can be skew and never meet.</p>
+<pre aria-label="ASCII diagram for 8) Intersection of Lines in 3D — Intersection of Lines in 3D">\  (line 1)
+   \
+    | (line 2)</pre>
+<h2>C) Business example</h2>
+<p>Two different customer-change plans might reach the same final profile. Intersection means both plans land on the same point.</p>
+<h2>D) Where it shows up in basic ML</h2>
+<p>Plain words: Find values that make both rules true.<br/>In machine learning, this is solving a system of equations.</p>
+<h2>E) Worked numeric example</h2>
+<p>Both lines meet at [2,2,4].</p>
+<ol><li>L1(t)=[1,2,3]+t[1,0,1]=[1+t,2,3+t].</li><li>L2(s)=[2,1,4]+s[0,1,0]=[2,1+s,4].</li><li>Solve: 1+t=2 → t=1; 2=1+s → s=1; check z.</li><li>Intersection [2,2,4].</li></ol>
+<table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>intersection</code></td><td><code>[2, 2, 4]</code></td></tr><tr><td><code>t</code></td><td><code>1</code></td></tr><tr><td><code>s</code></td><td><code>1</code></td></tr></tbody></table>
+<h2>F) Tiny Python (NumPy) snippet</h2>
+<pre><code class="language-python">import numpy as np
+p0=np.array([1,2,3]); d1=np.array([1,0,1])
+q0=np.array([2,1,4]); d2=np.array([0,1,0])
+t=s=1
+print(p0+t*d1, q0+s*d2)</code></pre>
+<h2>Try it yourself</h2>
+<ol><li>Open a terminal.</li><li>Run <code>python -m pip install numpy</code></li><li>Paste the code into <code>lesson.py</code> and run <code>python lesson.py</code></li></ol>
+<div class="callout takeaways"><h3>Key takeaways</h3><ul>
+<li>Intersection = same point for both lines.</li><li>Many 3D lines do not intersect.</li></ul></div>
+<div class="callout mistakes"><h3>Common mistakes</h3><ul>
+<li>Not checking all coordinates.</li><li>Assuming close lines intersect.</li></ul></div>
+<h2>Practice questions (with answers)</h2>
+<ol><li><strong>Practice 1: Using the numeric example, redo the calculation with one number changed. What do you get?</strong><br/><em>Answer: Follow the same steps; change only that component, then recompute.</em></li><li><strong>Practice 2: Explain in one sentence what this operation means for customer rows in a spreadsheet.</strong><br/><em>Answer: It combines/compares/scales customer-feature columns in a consistent, column-by-column way.</em></li></ol>
+<h2>Resources</h2>
+<ul>
+<li><strong>Free video:</strong> <a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/">MIT OpenCourseWare — 18.06 Linear Algebra</a></li>
+<li><strong>Free practice:</strong> <a href="https://www.khanacademy.org/exercise/shortest-distance-between-two-lines">Khan Academy — Shortest distance between two lines (practice)</a></li>
+<li><strong>Applied tabular ML resource:</strong> <a href="https://www.kaggle.com/code/dansbecker/how-models-work">Kaggle Learn — How Models Work</a></li>
+</ul>
+<h2>Visuals (optional)</h2>
+<ul>
+<li><strong>Realistic image prompt:</strong> Photorealistic scene of an online store marketer reviewing a spreadsheet while learning 8) intersection of lines in 3d — intersection of lines in 3d.</li>
+<li><strong>Infographic prompt:</strong> Clean infographic showing 8) Intersection of Lines in 3D — Intersection of Lines in 3D with simple arrows and a tiny customer-feature table.</li>
+</ul>
+<p><strong>Alt text:</strong> Illustration supporting 8) Intersection of Lines in 3D — Intersection of Lines in 3D with a simple vector sketch and a small customer table.<br/><strong>Caption:</strong> 8) Intersection of Lines in 3D — Intersection of Lines in 3D explained with a small online-store spreadsheet example.</p>
+</section>
+<footer><nav>
+<a href="equation-of-a-plane.html">← Previous lesson</a> | <a href="intersection-of-planes.html">Next lesson →</a>
+</nav></footer>
+</body>
+</html>

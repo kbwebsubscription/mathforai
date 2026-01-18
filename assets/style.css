@@ -1,0 +1,12 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+body { max-width: 900px; margin: 0 auto; padding: 24px; }
+header, footer { margin: 18px 0; }
+nav a { margin-right: 12px; }
+.callout { border-left: 4px solid #999; padding: 10px 12px; margin: 14px 0; background: #f7f7f7; }
+.callout.takeaways { border-left-color: #2b7; }
+.callout.mistakes { border-left-color: #e66; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+pre { padding: 12px; overflow-x: auto; background: #f3f3f3; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; }
+.small { color: #555; font-size: 0.95rem; }
